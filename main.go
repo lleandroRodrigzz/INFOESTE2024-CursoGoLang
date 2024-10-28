@@ -8,9 +8,9 @@ func main() {
 	var op string
 	for {
 		fmt.Println("\n\n\n****MENU****")
-		fmt.Println("A - Opção A")
-		fmt.Println("B - Opção B")
-		fmt.Println("C - Opção C")
+		fmt.Println("A - Testa maior idade da pessoa")
+		fmt.Println("B - Dorme Animais")
+		fmt.Println("C - NULL")
 		fmt.Println("X - Sair")
 		fmt.Print("Esolha uma Opcao: ")
 		fmt.Scanln(&op)
@@ -18,12 +18,16 @@ func main() {
 		switch op {
 			case "A", "a":
 				TestaMaiorIdadePessoa()
+
 			case "B", "b":
 				AnimalOpcaoB()
+
 			case "C", "c":
 				//opcaoC()
+
 			case "X", "x":
 				return
+
 			default:
 				fmt.Println("Opção inválida, tente novamente.")
 		}
@@ -41,7 +45,8 @@ func (p Pessoa) EhMaiorIdade() bool {
 
 func TestaMaiorIdadePessoa(){
 	pes := Pessoa{}
-	pes.Idade = 15
+	fmt.Printf("Digite sua idade: ")
+	fmt.Scanln(&pes.Idade)
 	if pes.EhMaiorIdade(){
 		fmt.Println("Maior de idade")
 	} else {

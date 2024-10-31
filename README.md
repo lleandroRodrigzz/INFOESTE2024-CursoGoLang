@@ -7,4 +7,8 @@ O curso aborda os principais conceitos da linguagem Go, desde os fundamentos at√
 ## Reposit√≥rio do Professor
 ```bash
 https://github.com/jsperandio/DevFest2024 
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 003903f25d352fa8bdb8065232d9f320d40f60fe
